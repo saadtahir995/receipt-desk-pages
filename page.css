@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  src: url('./barlow-semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./dm-sans-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./dm-sans-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+:root {
+  color-scheme: light dark;
+  --paper: oklch(98% .007 236);
+  --ink: oklch(27% .041 237);
+  --muted: oklch(43% .044 237);
+  --accent: oklch(42% .091 239);
+  --rule: oklch(85% .022 232);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: oklch(23% .024 239);
+    --ink: oklch(93% .014 238);
+    --muted: oklch(78% .034 236);
+    --accent: oklch(82% .085 231);
+    --rule: oklch(46% .035 239);
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.65 'DM Sans', sans-serif; }
+a { color: var(--accent); text-underline-offset: .23em; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+header, main { width: min(100% - 2rem, 48rem); margin-inline: auto; }
+header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0 .75rem; border-bottom: 1px solid var(--rule); padding-block: .5rem; }
+.brand, nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.brand, h1, h2 { font-family: 'Barlow Semi Condensed', sans-serif; font-weight: 600; }
+.brand { font-size: 1.5rem; color: var(--ink); }
+nav { display: flex; flex-wrap: wrap; column-gap: 1.25rem; }
+[aria-current='page'] { font-weight: 700; }
+main { padding: clamp(1.5rem, 6vw, 3.5rem) 0 4rem; overflow-wrap: anywhere; }
+h1 { font-size: clamp(2.8rem, 9vw, 4.25rem); line-height: 1; margin: 0 0 1.5rem; padding-bottom: 1rem; border-bottom: 4px double var(--accent); }
+h2 { font-size: 1.6rem; line-height: 1.2; margin: 2rem 0 .6rem; }
+p, ul { max-width: 68ch; margin: 0 0 1rem; }
+li + li { margin-top: .65rem; }
+.skip { position: absolute; left: 1rem; top: -6rem; background: var(--paper); padding: .65rem; }
+.skip:focus { top: 1rem; }

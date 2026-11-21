@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Receipt Desk privacy policy</title>
+  <link rel="stylesheet" href="./page.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header>
+    <span class="brand">Receipt Desk</span>
+    <nav aria-label="Receipt Desk information">
+      <a href="./support.html">Support</a>
+      <a href="./privacy.html" aria-current="page">Privacy policy</a>
+    </nav>
+  </header>
+  <main id="content">
+    <h1>Receipt Desk privacy policy</h1>
+    <p><strong>Publisher</strong><br>Glozion</p>
+    <p><strong>Effective date</strong><br>2026-11-21</p>
+    <h2>Receipts and documents</h2>
+    <p>Receipt Desk stores the receipts you save, associated notes and line items, and original images and PDFs in app storage on your device. You can choose documents from your photo library or files. The app uses camera access when you choose to take a receipt photo. Local text recognition and barcode decoding run on the device. The app PIN controls access to the app and is stored separately from receipt backups.</p>
+    <h2>Features that transfer information</h2>
+    <ul><li><strong>Exports and backup copies</strong> go to the destination you choose. Folder sync copies receipts and attachments to your selected shared folder. People with access to that folder may be able to open those copies.</li><li><strong>Google Drive or OneDrive backup</strong>, when configured, uses the account you connect and stores a backup in the provider&#39;s app storage. Receipt Desk uses the provider authorization to list, write, and restore those backups.</li><li><strong>Cloud receipt analysis</strong>, when configured and selected, sends the chosen documents to the configured Gemini service or receipt-analysis endpoint to extract receipt fields. The current build uses on-device text recognition.</li><li><strong>Exchange-rate estimates</strong> request historical currency rates. The request uses currency codes and dates. Receipt amounts are used on the device to calculate estimates.</li><li><strong>Play purchases</strong>, when enabled, are handled by Google Play. The purchase verifier uses your signed-in Receipt Desk account to associate a purchase with you. It receives the app package, product identifier, and purchase token, and stores an encrypted copy of the purchase token to check whether Premium is still active. Google Play receives an obfuscated account identifier. Family &amp; Friends uses verified eligibility to grant shared Premium.</li><li><strong>Fiscal authority checks</strong>, when configured and selected, download public certificates and revocation lists. The app checks your receipt and selected signing certificate on the device. The download does not include your receipt data or certificate.</li><li><strong>Family &amp; Friends</strong>, when configured, uses the account provider you choose and records the account identifier, family membership, role, and eligibility for shared Premium. It stores a protected representation of the invitation code and expires it after 24 hours. Family sharing operates separately from the receipt ledger. The family service does not receive receipts, attachments, or receipt amounts.</li><li><strong>Optional diagnostics</strong>, when configured and enabled by you, sends aggregated feature counts or crash counts, the app version, Android API level, and a report identifier used for retry handling. The report contains no receipt contents, account details, or stack traces. The receiver and network infrastructure receive the connection information needed to deliver the request.</li></ul>
+    <h2>Retention and deletion</h2>
+    <p>Use <strong>Settings → Clear all data</strong> to remove the local ledger and queued diagnostics. Copies you exported, backed up, or synced can be deleted at their destination. With Family &amp; Friends enabled, use <strong>Remove my family data</strong> to remove your membership and delete a group you own. For purchase-verification records or account records held by the publisher, contact us using the address below. Use your identity provider’s account controls to manage records it holds.</p>
+    <p>Local data and copies you make remain at their saved locations until you delete them. Glozion keeps support correspondence to handle your request and any follow-up. You can email us to request deletion of correspondence we hold. Publisher-operated diagnostics, account sign-in, and purchase verification are disabled in the current build.</p>
+    <h2>Contact</h2>
+    <p>Email <a href="mailto:info@glozion.com">info@glozion.com</a> for privacy questions or to request deletion of information the publisher holds.</p>
+  </main>
+</body>
+</html>
